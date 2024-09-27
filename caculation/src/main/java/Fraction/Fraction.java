@@ -8,9 +8,6 @@ public class Fraction {
     private int denominator;//分母
 
 
-    public Fraction() {
-    }
-
     public Fraction(int numerator, int denominator) {
         this.numerator = numerator;
         this.denominator = denominator;
