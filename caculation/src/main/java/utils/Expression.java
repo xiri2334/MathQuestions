@@ -2,7 +2,7 @@ package utils;
 
 import java.util.*;
 import java.util.Random;
-import Symbol.Symbol;
+import static Symbol.Symbol.EQU;
 
 public class Expression {
     /**
@@ -83,9 +83,11 @@ public class Expression {
 
         //将运算符数组和操作数数组拼成一个运算式字符串
         StringBuilder str = new StringBuilder(curNumbers[0]);
-        for (int k = 0; k < curOperators.length; k++) {
-            str.append(curOperators[k]).append(curNumbers[k + 1]);
+       for (int i = 0; i < curOperators.length; i++) {
+            str.append(curOperators[i]).append(curNumbers[i + 1]);
         }
+        //最后添加等号
+        str.append(EQU);
         //生成的运算式
         String express = str.toString();
         //获取运算式结果
