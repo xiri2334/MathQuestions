@@ -1,6 +1,7 @@
 package utils;
 
 import java.util.*;
+import java.util.Random;
 import Symbol.Symbol;
 
 public class Expression {
@@ -47,8 +48,8 @@ public class Expression {
         //操作数的数量
         int number = curNumbers.length;
         //随机判断是否生成带括号的运算式
-        int isAddBracket = (int)(Math.random()*10) % 2;
-        //随机生成器
+        Random random = new Random();
+        int isAddBracket = random.nextInt(10);
         Random random = new Random();
 
         if(isAddBracket==1){
