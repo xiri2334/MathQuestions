@@ -8,9 +8,9 @@ public class NumberCreate {
         Random random=new Random();
         String [] numbers =new String[num];
         for(int i=0;i<num;i++)
-        {//判断是整数还是小数
-            int tag=(int)(Math.random()*10)%2;
-            if(tag==1)
+        {
+            int j = random.nextInt(10);
+            if(j < 9)
             {
                 int n=(random.nextInt(round))+1;
                 numbers[i]=n+" ";
