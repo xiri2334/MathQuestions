@@ -29,9 +29,9 @@ public class File {
             int count =1;
             for(Map.Entry<String, String> entry:questionAndResultMap.entrySet()){
 
-                exerciseBuffer.append(count).append(". ");
+                exerciseBuffer.append(count).append(".");
                 exerciseBuffer.append(entry.getKey()).append("\r\n");
-                answerFileBuffer.append(count).append(". ");
+                answerFileBuffer.append(count).append(".");
                 answerFileBuffer.append(entry.getValue()).append("\r\n");
                 count++;
             }
